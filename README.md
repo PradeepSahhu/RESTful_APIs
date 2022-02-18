@@ -61,7 +61,7 @@ app.get("/articles",function(req,res){
 ### Post Request to the server to add data to the server.
 - We will use **Postman** at [Link](https://www.postman.com/)
 
-## Express Route Parameters 
+## Express Route Parameters (Chained Method) 
 - Using express.route to target the same route with different requests.
 
 ```
@@ -76,6 +76,46 @@ app.route('/articles')
     res.send('Successfully updated the entire data in articles route')
   })
  ```
+ 
+ ```
+ app.route("/articles")
+.get(function(req,res){
+    Article.find({}, function(err,foundArticles){
+        if(!err){
+        res.send(foundArticles); //It will send the data to the articles route.
+        } 
+        else {
+            res.send(err);
+        };
+    });
+    console.log("Server is running and accessing the Articles route");
+})
+.post(function(req,res){
+
+    // Adding the data to the MongoDB using mongoose Document.
+    const newArticle = new Article({
+        title: req.body.title,
+        content: req.body.content
+    });
+    newArticle.save(function(err){
+        if(!err){
+            res.send("Successfully added a new article");
+        } else {
+            res.send(err);
+        }
+    });
+})
+.delete(function(req,res){
+    Article.deleteMany({},function(err){
+        if(!err){
+            res.send("Successfully deleted all the articles.")
+        } else {
+            res.send(err);
+        }
+    });
+});
+```
+ 
 
 
 
