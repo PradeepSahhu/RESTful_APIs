@@ -3,8 +3,6 @@
 
 REST - **RE**presentational **S**tate **T**ransfer
 
-![1_0z-VAOlNo2Gm6hOMfFPy1g](https://user-images.githubusercontent.com/94203408/154633079-fdd05b3f-186e-407a-8058-d157d7590f07.jpeg)
-
 The whole internet is based on client and server relationship.
 Client ---> Server
 
