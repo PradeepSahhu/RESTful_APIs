@@ -1,4 +1,6 @@
 # RESTful_APIs
+![RESTapiFeaturedImage](https://user-images.githubusercontent.com/94203408/154632582-da28bb1b-a926-4885-a3e9-4fb9f1282ec6.png)
+
 REST - **RE**presentational **S**tate **T**ransfer
 
 The whole internet is based on client and server relationship.
