@@ -61,6 +61,22 @@ app.get("/articles",function(req,res){
 ### Post Request to the server to add data to the server.
 - We will use **Postman** at [Link](https://www.postman.com/)
 
+## Express Route Parameters 
+- Using express.route to target the same route with different requests.
+
+```
+app.route('/articles')
+  .get((req, res) => {
+    res.send('Successfully Read the Data in articles route')
+  })
+  .post((req, res) => {
+    res.send('Successfully added the article in articles route)
+  })
+  .put((req, res) => {
+    res.send('Successfully updated the entire data in articles route')
+  })
+ ```
+
 
 
 
