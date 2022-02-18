@@ -44,6 +44,24 @@ PATCH is "only sending a piece of data that needs to be updated.
 ## Specific routes/patters/Endpoints URLs
 like: /documents /contact in webpages.
 
+### Get Request to the server to find data (In Database).
+```
+app.get("/articles",function(req,res){
+    Article.find({}, function(err,foundArticles){
+        if(!err){
+        res.send(foundArticles); //It will send the data to the articles route.
+        } 
+        else {
+            res.send(err);
+        };
+    });
+    console.log("Server is running and accessing the Articles route");
+});
+```
+### Post Request to the server to add data to the server.
+- We will use **Postman** at [Link](https://www.postman.com/)
+
+
 
 
 
