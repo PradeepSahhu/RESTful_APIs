@@ -29,7 +29,7 @@ client ---> API ---> Server
 ### Rules for making An API RESTful.
 - use HTTP request verbs.
 - use specific patterns of Routes/Endpoints URLs
-</br>
+
 ## HTTP Request Verbs like:
 - GET  
 - POST  
