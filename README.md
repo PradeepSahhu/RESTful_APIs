@@ -59,6 +59,8 @@ app.get("/articles",function(req,res){
 });
 ```
 ### Post Request to the server to add data to the server.
+![Screenshot (83)](https://user-images.githubusercontent.com/94203408/154781743-2a7c8615-52f2-42f1-8de7-2965db950e74.png)
+
 - We will use **Postman** at [Link](https://www.postman.com/)
 
 ## Express Route Parameters (Chained Method) 
@@ -115,7 +117,10 @@ app.route('/articles')
     });
 });
 ```
- 
+### Robo 3T
+- To view your database in GUI Format
+- [link](https://robomongo.org/)
+
 
 
 
